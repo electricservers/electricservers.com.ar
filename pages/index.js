@@ -21,6 +21,10 @@ export default function body() {
       ip: "45.235.99.105",
       port: 27040,
     },
+    {
+      ip: "177.54.148.107",
+      port: 30050,
+    },
   ];
 
   return (
