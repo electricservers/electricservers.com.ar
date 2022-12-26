@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@fabricio-191/valve-server-query': ^4.1.6
+  '@fabricio-191/valve-server-query': ^4.1.7
   '@sveltejs/adapter-auto': ^1.0.0
   '@sveltejs/kit': ^1.0.1
   '@typescript-eslint/eslint-plugin': ^5.47.0
@@ -21,7 +21,7 @@ specifiers:
   vite: ^4.0.3
 
 dependencies:
-  '@fabricio-191/valve-server-query': 4.1.6
+  '@fabricio-191/valve-server-query': 4.1.7
   autoprefixer: 10.4.13_postcss@8.4.20
   postcss: 8.4.20
   tailwindcss: 3.2.4_postcss@8.4.20
@@ -259,8 +259,8 @@ packages:
       - supports-color
     dev: true
 
-  /@fabricio-191/valve-server-query/4.1.6:
-    resolution: {integrity: sha512-RRYspcSDv4/A8baY1uO718bsCDVAQIPcdUujVACvIXa1e+8Rr32Db5ymoMd/eoYYtTyzd15Sh2xRf4dOqjAFkg==}
+  /@fabricio-191/valve-server-query/4.1.7:
+    resolution: {integrity: sha512-rpjALUhq3k/kaBfbIj+kkch0AiP2I9liCYUTs0UGzJtsxM1uwqLPujTjRTq5cS+cNEJXeK49H+AmB/zx5zt6iA==}
     dev: false
 
   /@humanwhocodes/config-array/0.11.8:

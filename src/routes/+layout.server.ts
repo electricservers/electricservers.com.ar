@@ -1,9 +1,11 @@
-import { Server } from '@fabricio-191/valve-server-query'
+import pkg from '@fabricio-191/valve-server-query';
+const { Server } = pkg;
+
 import { serverList } from '../servers/serversList'
 import type { LayoutServerLoad } from './$types'
 
 export const load = (async () => {
-  let infoList: Server.Info[] = []
+  let infoList: any[] = []
   for await (const server of serverList) {
     const sv = await Server({ ip: server.ip, port: server.port, timeout: 3000 })
     const svInfo = await sv.getInfo()
