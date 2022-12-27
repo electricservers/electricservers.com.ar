@@ -7,15 +7,15 @@
   export let data: any
 </script>
 
-<div class="select-none bg-[url('../background/bg_main.jpg')]">
+<div class="select-none bg-[url('background/bg_main.jpg')]">
   <Header />
 
   <!-- Body -->
   <div class="mx-auto">
-    <ServerSection serverList={data.list} logo="/logo/tf2.svg" bgImage="/background/bg_servers.png" text="Servidores" />
-    <Section link="https://discord.gg/NYJDjWqp9U" bgImage="/background/bg_suijin.jpg" logo="/logo/discord.svg" text="Discord" />
-    <Section link="http://168.181.184.179/" bgImage="/background/bg_upward.jpg" logo="/logo/sourcebans.png" text="Sourcebans" />
-    <Section link="https://steamcommunity.com/groups/electricservers" bgImage="/background/bg_hightower.jpg" logo="/logo/steam.svg" text="Grupo de Steam" />
+    <ServerSection serverList={data.list} logo="logo/tf2.svg" bgImage="background/bg_servers.png" text="Servidores" />
+    <Section link="https://discord.gg/NYJDjWqp9U" bgImage="background/bg_suijin.jpg" logo="logo/discord.svg" text="Discord" />
+    <Section link="http://168.181.184.179/" bgImage="background/bg_upward.jpg" logo="logo/sourcebans.png" text="Sourcebans" />
+    <Section link="https://steamcommunity.com/groups/electricservers" bgImage="background/bg_hightower.jpg" logo="logo/steam.svg" text="Grupo de Steam" />
   </div>
 
   <Footer />

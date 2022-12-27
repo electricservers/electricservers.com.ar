@@ -1,5 +1,5 @@
-import pkg from '@fabricio-191/valve-server-query';
-const { Server } = pkg;
+import pkg from '@fabricio-191/valve-server-query'
+const { Server } = pkg
 
 import { serverList } from '../servers/serversList'
 import type { LayoutServerLoad } from './$types'

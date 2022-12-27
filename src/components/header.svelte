@@ -1,4 +1,4 @@
-<div class="bg-[url('../background/bg_header.jpg')] p-14 sm:p-28 flex flex-col sm:flex-row sm:divide-x-2 bg-[center_top_30%] h-[50vx] skew-y-2">
+<div class="bg-[url('background/bg_header.jpg')] p-14 sm:p-28 flex flex-col sm:flex-row sm:divide-x-2 bg-[center_top_30%] h-[50vx] skew-y-2">
   <div class="m-auto -skew-y-2">
     <img src="/electric-logo.png" class="max-h-[300px]" alt="logo" />
   </div>
