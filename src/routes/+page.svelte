@@ -7,6 +7,7 @@
   export let data: any
 </script>
 
+<img src="background/bg_main.jpg" alt="main background" class="bg" />
 <div class="select-none">
   <Header />
 

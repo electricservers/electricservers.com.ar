@@ -1,7 +1,6 @@
 <script lang="ts">
   import type { ServerInfo } from 'src/types/serverInfo'
 
-  export let loading: boolean
   export let serverInfo: ServerInfo
 
   const playerCountClass: string = `font-bold ${!!serverInfo ? (serverInfo.players !== serverInfo.players ? 'text-red-800' : 'text-green-800') : 'text-gray-600'}`
@@ -10,7 +9,7 @@
   const cursor: string = `${!!serverInfo ? 'cursor-pointer' : 'cursor-not-allowed'}`
 </script>
 
-<div class={`flex px-4 ${loading ? 'animate-pulse' : ''}`}>
+<div class="flex px-4">
   <!-- Status Icon -->
   <div class="w-5 flex">
     <span class={`relative flex my-auto rounded-full h-3 w-3 ${serverStatusColor}`} />
