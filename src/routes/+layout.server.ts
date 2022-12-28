@@ -22,6 +22,6 @@ export const load = (async () => {
     })
   }
   return {
-    list: infoList,
+    serverList: infoList,
   }
 }) satisfies LayoutServerLoad
