@@ -1,22 +1,27 @@
-import pkg from '@fabricio-191/valve-server-query'
-const { Server } = pkg
+import Gamedig from 'gamedig'
+import type { ServerInfo } from 'src/types/serverInfo'
 
 import { serverList } from '../servers/serversList'
 import type { LayoutServerLoad } from './$types'
 
 export const load = (async () => {
-  let infoList: any[] = []
+  let infoList: ServerInfo[] = []
   for await (const server of serverList) {
-    const sv = await Server({ ip: server.ip, port: server.port, timeout: 3000 })
-    const svInfo = await sv.getInfo()
-    infoList.push(svInfo)
+    await Gamedig.query({
+      type: 'tf2',
+      host: server.ip,
+      port: server.port,
+    }).then(state => {
+      infoList.push({
+        connect: state.connect,
+        name: state.name,
+        players: state.players.length,
+        maxplayers: state.maxplayers,
+        map: state.map,
+      })
+    })
   }
   return {
     list: infoList,
   }
 }) satisfies LayoutServerLoad
-
-// Hack to handle bigint deserialization
-;(BigInt.prototype as any).toJSON = function () {
-  return this.toString()
-}

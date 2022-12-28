@@ -1,10 +1,10 @@
 <script lang="ts">
-  import type { Server } from '@fabricio-191/valve-server-query'
+  import type { ServerInfo } from 'src/types/serverInfo'
 
   export let loading: boolean
-  export let serverInfo: Server.Info
+  export let serverInfo: ServerInfo
 
-  const playerCountClass: string = `font-bold ${!!serverInfo ? (serverInfo.players.online - serverInfo.players.max === 0 ? 'text-red-800' : 'text-green-900') : 'text-gray-600'}`
+  const playerCountClass: string = `font-bold ${!!serverInfo ? (serverInfo.players !== serverInfo.players ? 'text-red-800' : 'text-green-800') : 'text-gray-600'}`
   const serverStatusColor: string = `${!!serverInfo ? 'bg-green-600' : 'bg-red-600'}`
   const connectButtonColor: string = `${!!serverInfo ? 'bg-green-600 hover:bg-green-700' : 'bg-gray-500'} transition-colors`
   const cursor: string = `${!!serverInfo ? 'cursor-pointer' : 'cursor-not-allowed'}`
@@ -27,7 +27,7 @@
     <!-- Player Count -->
     <div class="col-start-3 text-center w-max m-auto">
       <p class={playerCountClass}>
-        {`${!!serverInfo ? serverInfo.players.online - serverInfo.players.bots : -1}/${!!serverInfo ? serverInfo.players.max : -1}`}
+        {`${!!serverInfo ? serverInfo.players : -1}/${!!serverInfo ? serverInfo.maxplayers : -1}`}
       </p>
     </div>
 
@@ -40,7 +40,7 @@
 
     <!-- Connect Button -->
     <div class="text-center mx-8 self-end">
-      <a href={!!serverInfo ? `steam://connect/${serverInfo.address}` : '#'}>
+      <a href={!!serverInfo ? `steam://connect/${serverInfo.connect}` : '#'}>
         <div class={`${connectButtonColor} ${cursor} rounded-xl p-1 m-2 invisible sm:visible min-w-min  font-medium`}>¡Jugar!</div>
       </a>
     </div>

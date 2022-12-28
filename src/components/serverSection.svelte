@@ -1,11 +1,11 @@
 <script lang="ts">
+  import type { ServerInfo } from 'src/types/serverInfo'
   import Server from './server.svelte'
-  import type { Server as ServerObject } from '@fabricio-191/valve-server-query'
 
   export let bgImage: string
   export let logo: string
   export let text: string
-  export let serverList: ServerObject.Info[]
+  export let serverList: ServerInfo[]
 </script>
 
 <div class="overflow-hidden h-max skew-y-2 my-5">
