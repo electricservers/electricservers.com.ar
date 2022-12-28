@@ -7,7 +7,7 @@
   export let data: any
 </script>
 
-<div class="select-none bg-[url('background/bg_main.jpg')]">
+<div class="select-none">
   <Header />
 
   <!-- Body -->
