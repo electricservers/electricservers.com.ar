@@ -33,7 +33,9 @@
     "@sveltejs/adapter-vercel": "^1.0.0",
     "@types/gamedig": "^4.0.0",
     "autoprefixer": "^10.4.13",
+    "compressjs": "^1.0.3",
     "gamedig": "^4.0.5",
+    "got": "^12.5.3",
     "postcss": "^8.4.20",
     "tailwindcss": "^3.2.4"
   }
