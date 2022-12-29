@@ -8,7 +8,7 @@
   export let data: PageData
 </script>
 
-<div class="select-none">
+<div class="select-none bg-[url('background/bg_main.jpg')]">
   <Header />
 
   <!-- Body -->
