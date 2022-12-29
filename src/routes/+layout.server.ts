@@ -14,7 +14,7 @@ export const load = (async () => {
     })
     const svInfo = await query.getInfo()
     infoList.push({
-      connect: svInfo.address + ':' + svInfo.port,
+      connect: svInfo.address,
       name: svInfo.name,
       map: svInfo.map,
       maxplayers: svInfo.players.max,
