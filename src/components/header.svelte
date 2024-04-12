@@ -3,7 +3,7 @@
     <img src="/electric-logo.png" class="max-h-[300px]" alt="logo" />
   </div>
   <div class="font-poppins m-auto pl-6 -skew-y-2">
-    <h1 class="text-center sm:text-left font-bold text-2xl md:text-3xl lg:text-4xl text-white text-shadow">
+    <h1 class="text-center sm:text-left font-bold text-2xl md:text-3xl lg:text-5xl text-white text-shadow">
       Tu comunidad<br />
       en Team Fortress 2.
     </h1>
