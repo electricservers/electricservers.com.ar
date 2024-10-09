@@ -1,4 +1,4 @@
-import type { Server } from 'src/types/server'
+import type { Server } from '../types/server'
 
 export const serverList: Server[] = [
   {

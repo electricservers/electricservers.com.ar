@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { ServerInfo } from 'src/types/serverInfo'
+  import type { ServerInfo } from '../types/serverInfo'
 
   export let loading: boolean
   export let serverInfo: ServerInfo
