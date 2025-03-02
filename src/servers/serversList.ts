@@ -7,10 +7,6 @@ export const serverList: Server[] = [
   },
   {
     ip: '45.235.99.105',
-    port: 27038,
-  },
-  {
-    ip: '45.235.99.105',
     port: 27039,
   },
   {
@@ -19,6 +15,10 @@ export const serverList: Server[] = [
   },
   {
     ip: '138.199.5.146',
+    port: 27015
+  },
+  {
+    ip: '138.199.5.149',
     port: 27015
   },
 ]
